@@ -17,6 +17,59 @@
     
     
 </head>
+
+<style>
+    .resume{
+        align-items: center;
+        text-align: center;
+    }
+    .resume-conatiner{
+        margin: auto;
+    }
+    .row-s{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 200px;
+    }
+    .col-2-r{
+        display: inline-block;
+        flex-basis: 40%;
+    }
+ 
+   .but-1-sec{
+       padding: 20px;
+   }
+   .but-2-sec{
+       padding: 20px;
+   }
+   .bottom{
+       margin-top: 15rem;
+   }
+
+   .main-butt button{
+    font-family: 'Lora', serif;
+    padding: 10px 15px;
+    border: solid 2px var(--darkblue);
+    margin-right: 10px;
+    color: var(--darkblue);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 15px;
+    background-color: var(--almond);
+    letter-spacing: 1.5px;
+    }
+    .main-butt button:hover{
+        background-color: #22333ba6;
+        color: var(--almond);
+        text-decoration: none;
+    }
+
+
+</style>
+
+
+
 <body style="background-color: black;"> 
     <div class="header active" id="header" >
         <h1>Hello</h1>
@@ -38,14 +91,6 @@
 
             </div>
     </div>
-
-
-    
-
-
-
-
-
 
 
 
@@ -260,7 +305,7 @@
                 <div class="row-s">
                     <div class="col-2-r">
                         <div class="bottom">
-                            <div class="but-1-sec">
+                            <div class="but-1-sec main-butt">
                                 <button><a href="{% static './img/resume.png' %}" download="resume.png">Download Resume</a></button>
                             </div>
                             <div class="but-2-sec">
@@ -268,7 +313,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2-r col-butt">
+                    <div class="col-2-r col-butt main-butt">
                         <img src="./img/resume.png" width="500px
                         " alt="">
                     </div>
