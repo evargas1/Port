@@ -17,6 +17,36 @@
     
     
 </head>
+<style>
+    .resume{
+        align-items: center;
+        text-align: center;
+    }
+    .resume-conatiner{
+        margin: auto;
+    }
+    .row-s{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 200px;
+    }
+    .col-2-r{
+        display: inline-block;
+        flex-basis: 40%;
+    }
+ 
+   .but-1-sec{
+       padding: 20px;
+   }
+   .but-2-sec{
+       padding: 20px;
+   }
+   .bottom{
+       margin-top: 15rem;
+   }
+</style>
+
+
 <body style="background-color: black;"> 
     <div class="header active" id="header" >
         <h1>Hello</h1>
@@ -252,8 +282,29 @@
     </section>
 
     <section id="section-4">
-        <h1>Get In Touch</h1>
-        <button><a href="{% static './img/resume.png' %}" download="resume.png">Download Resume</a></button>
+        <div class="resume">
+            <div class="title-short">
+                <h1>Download my resume</h1>
+            </div>
+            <div class="resume-container">
+                <div class="row-s">
+                    <div class="col-2-r">
+                        <div class="bottom">
+                            <div class="but-1-sec">
+                                <button>Hey</button>
+                            </div>
+                            <div class="but-2-sec">
+                                <button>Hey there</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2-r col-butt">
+                        <img src="./img/resume.png" width="500px
+                        " alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         
     </section>
